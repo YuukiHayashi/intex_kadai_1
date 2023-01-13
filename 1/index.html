@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>喫茶屋　green tea Cafe</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+	<header class="header">
+			<nav class="nav">
+				<div class="logo">
+					<img src="images/logo.png">
+				</div>
+				<ul>
+					<li><a href="index.html">待合所</a></li>
+					<li><a href="about.html">案内</a></li>
+					<li><a href="menu.html">御品書</a></li>
+					<li><a href="access.html">訪問</a></li>
+					<li><a href="contact.html">問合</a></li>
+				</ul>
+			</nav>
+	</header>
+		<div class="keisen">
+			<img src="images/keisen.png">
+		</div>
+		<main>
+			<div class="index">
+				<img id="mypic" src="images/mattya_2.png">
+					<script type="text/javascript">
+						var pics_src=new Array("images/mattya_2.png","images/tyaba_3.png","images/kominka_3.png");
+						var num=-1;
+						slideshow_timer();
+
+						function slideshow_timer(){
+							if(num==2){
+								num=0;
+							}else{
+								num ++;
+							}
+							document.getElementById("mypic").src=pics_src[num];
+							setTimeout("slideshow_timer()",3000);
+						}
+					</script>
+				<img class="absolute" src="images/logo_3.png">
+			</div>
+			<div class="keisen">
+				<img src="images/keisen.png">
+			</div>
+		<div class="index">
+			<p class="index_bottom">季節限定、<br><span class="mgr-100">「もんぶらん」  始めました</span></p>
+			<img src="images/top_5.png">
+			<h2>抹茶専門の喫茶店</h2>
+		</div>
+		</main>
+	<footer>
+		<div class="keisen">
+			<img src="images/keisen.png">
+		</div>
+		<p class="footer">&copy;Copyright ICHINOYA. All right reserved.</p>
+	</footer>
+	</div>
+</body>
+</html>

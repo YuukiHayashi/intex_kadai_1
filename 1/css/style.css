@@ -1,0 +1,244 @@
+@charset"UTF-8";
+
+html{
+	background-image: url(../images/haikei.jpg);
+	font-family: "HGP行書体";
+	font-size: 24px;
+	color: #000000;
+	}
+
+html * {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+/*画像読み時にフェードイン*/
+body {
+    animation: bodyfadeIn 2s ease 0s 1 normal;
+    -webkit-animation: bodyfadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes bodyfadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes bodyfadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+/*白背景*/
+.wrapper{
+	background-image: url(../images/haikei_2.jpg);
+	background-position: center;
+	max-width: 1080px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: repeat-y;
+}
+
+.wrapper{
+	margin: 0 auto 0 auto;
+	padding-bottom: 50px;
+	height: auto;
+}
+
+/*文字の縦書き指定、行間指定*/
+p {
+	writing-mode:vertical-rl;
+	line-height: 3;
+	padding: 5px;
+}
+h1 {
+	writing-mode: vertical-rl;
+	line-height: 1;
+	padding: 5px;
+}
+
+/*リンクに対しての動作*/
+a:link {
+	color: #2e302f;
+}
+a:hover {
+	color: #5a615c;
+} 
+
+/*ナビゲーション*/
+.nav li{
+	display: inline;
+	font-size: 25px;
+	padding-right: 30px;
+}
+
+.nav ul{
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	padding: 30px 0px 10px;
+}
+
+.nav a:link{
+	text-decoration: none;
+}
+
+/*footerの横書き指定*/
+.footer{
+	font-size: 16px;
+	writing-mode: horizontal-tb;
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+	text-align: right;
+}
+
+/*index*/
+.index{
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.absolute{
+	position: absolute;
+	top: 80px;
+}
+.logo{
+	position: absolute;
+	margin-left: 90px; 
+}
+.mgr-100{
+	margin-top: 80px; 
+}
+.index_bottom{
+	line-height: 2;
+}
+
+/*menu*/
+.menu_box1{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.menu_item1{
+	margin: 30px;
+}
+
+.menu_box2{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.menu_item2{
+	margin: 30px;
+}
+
+.menu_box3{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.menu_item3{
+	margin: 30px;
+}
+
+.keisen{
+	display: flex;
+	justify-content: center;
+}
+
+.mgr-60{
+	margin-top: 60px;
+}
+
+/*about*/
+.about{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	height: 300px; 
+	padding: 20px;
+	padding-right: 50px;
+	max-width: 960px;
+}
+
+h2{
+	writing-mode: vertical-rl;
+}
+
+.about_text{
+	line-height: 2;
+	margin-right: -50px;
+	padding-left: 100px;
+}
+
+/*access*/
+.access{
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+	height: 350px; 
+	padding: 20px 20px 20px 100px;
+	max-width: 960px;
+}
+
+.access_text{
+	font-size: 20px;
+	line-height: 2;
+}
+
+.tel{
+	font-size: 16px;
+	text-align: right;
+}
+
+/*contact*/
+h1 {
+	writing-mode: vertical-rl;
+	padding: 10px;
+}
+
+form {
+	writing-mode:vertical-rl;
+	display: inline-block;
+	justify-content: center;
+	padding: 60px 10px 60px 90px;
+	line-height: 1;
+	width: 960px;
+}
+
+.form_text {
+	writing-mode: initial;
+	transform: rotate(90deg);
+	transform-origin: top left;	
+}
+
+.contact{
+	width: 80px;
+	margin-right: 60px;
+}
+
+.form_text{
+	writing-mode: initial;
+	transform: rotate(90deg);
+	transform-origin: top left;
+
+	width: 120px;
+	height: 20px;
+	margin-right: -90px;
+}
+
+input[type="text"]{
+	width: 30em;
+}
+input[type="submit"]{
+	writing-mode: initial;
+	transform: rotate(90deg);
+	transform-origin: top left;
+	width: 80px;
+	height: 30px;
+}
